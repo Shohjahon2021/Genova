@@ -11,8 +11,10 @@ let modal = document.querySelector('.modal');
 let modalClose = document.querySelector('.modal__close-btn');
 let modalName = document.querySelector('#modalName');
 let modalNumber = document.querySelector('#modalNumber');
-let modalSubmit = document.querySelector('.modal__submit-btn');
 let pointReturn;
+let orderForm = document.querySelector('.order__form');
+let orderName = orderForm.querySelector('#name');
+let orderNumber = orderForm.querySelector('#number');
 
 // Menu
 
@@ -85,6 +87,18 @@ modal.addEventListener('submit', function(pEvent) {
         pEvent.preventDefault(); 
         alert('Form is empty.');
     } else if (modalName.value === '' || '' === modalNumber.value) {
+        pEvent.preventDefault(); 
+        alert('One field is empty.');
+    }
+});
+
+// Order form 
+
+orderForm.addEventListener('submit', function(pEvent) {
+    if(orderName.value === '' && '' === orderNumber.value) {
+        pEvent.preventDefault(); 
+        alert('Form is empty.');
+    } else if (orderName.value === '' || '' === orderNumber.value) {
         pEvent.preventDefault(); 
         alert('One field is empty.');
     }
