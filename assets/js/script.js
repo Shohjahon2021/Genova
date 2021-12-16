@@ -22,7 +22,9 @@ menuBtn.addEventListener('click', function(evt) {
     if (menuMobile.classList.contains('active')) {
         menuMobile.classList.remove('active');
         body.classList.remove('blocked');
+        window.scrollTo(0, pointReturn);
     } else {
+        pointReturn = window.pageYOffset;
         menuMobile.classList.add('active');
         body.classList.add('blocked');
     }
