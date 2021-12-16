@@ -105,3 +105,6 @@ orderForm.addEventListener('submit', function(pEvent) {
         alert('One field is empty.');
     }
 });
+
+// Scroll to top at start
+window.scrollTo(0, 0);
