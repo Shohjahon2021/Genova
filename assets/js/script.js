@@ -4,6 +4,7 @@ let header = document.querySelector('header')
 let headerHeight = header.offsetHeight;
 let menuBtn = document.querySelector('.header__menu-btn');
 let menuMobile = document.querySelector('.header__menu-mobile');
+let menuMobileLinks = menuMobile.querySelectorAll('.item__link');
 let services = document.querySelector('.services');
 let calcBtns = document.querySelectorAll('.item__calc');
 let modal = document.querySelector('.modal');
@@ -33,6 +34,13 @@ menuBtn.addEventListener('click', function(evt) {
         }
     }
 });
+
+menuMobileLinks.forEach(function(link) {
+    link.onclick = function() {
+        menuMobile.classList.remove('active');
+        body.classList.remove('blocked');
+    }
+})
 
 // Services block
 

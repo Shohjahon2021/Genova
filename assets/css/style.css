@@ -275,10 +275,12 @@ header .item__link:hover {color: var(--gold);}
     color: #fff;
     letter-spacing: 1px;
     line-height: 1.3;
+    text-decoration: none;
     text-align: center;
     margin-top: auto;
 }
 
+.phone-text {color: inherit;}
 
 .callback-btn {
     position: fixed;
@@ -1372,6 +1374,8 @@ footer {
     line-height: 1.4;
     text-align: center;
 }
+
+.footer__contact-item.phone {color: inherit;}
 
 .footer__contact-media {
     display: -webkit-box;
