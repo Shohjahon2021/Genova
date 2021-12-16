@@ -161,6 +161,9 @@ h6 {
 }
 
 * {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
     letter-spacing: 1px;
     -webkit-transition: .2s;
     -o-transition: .2s;
@@ -456,6 +459,7 @@ header .item__link:hover {color: var(--gold);}
         -ms-flex-pack: center;
             justify-content: center;
     gap: 3%;
+    width: 100%;
     padding: 4% 0;
     border-radius: 6px;
     background-color: var(--black);
