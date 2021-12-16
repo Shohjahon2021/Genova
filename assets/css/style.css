@@ -171,7 +171,11 @@ h6 {
 }
 
 body {font-family: 'Montserrat';}
-body.blocked {position: fixed;}
+
+body.blocked {
+    position: fixed;
+    overflow: hidden;
+}
 
 img,
 picture img {width: 100%;}
