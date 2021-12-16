@@ -171,7 +171,7 @@ h6 {
 }
 
 body {font-family: 'Montserrat';}
-body.blocked {overflow: hidden;}
+body.blocked {position: fixed;}
 
 img,
 picture img {width: 100%;}
@@ -1196,6 +1196,7 @@ header .item__link:hover {color: var(--gold);}
     font-size: calc(18px + (21 - 18) * ((100vw - 320px) / (1440 - 320)));
     font-weight: 600;
     color: silver;
+    transform: translateZ(0);
 }
 
 .order__form-submit:hover {
