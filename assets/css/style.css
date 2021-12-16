@@ -206,7 +206,7 @@ header .nav__list {
 }
 
 header .item__link {
-    font-size: calc(14px + (20 - 14) * ((100vw - 576px) / (1440 - 576)));
+    font-size: calc(13.5px + (20 - 13.5) * ((100vw - 576px) / (1440 - 576)));
     font-weight: 600;
     color: silver;
 }
@@ -214,7 +214,7 @@ header .item__link {
 header .item__link:hover {color: var(--gold);}
 
 .header__phone {
-    font-size: calc(14px + (25 - 14) * ((100vw - 576px) / (1440 - 576)));
+    font-size: calc(13px + (25 - 13) * ((100vw - 576px) / (1440 - 576)));
     font-weight: 300;
     color: #fff;
 }
@@ -356,7 +356,7 @@ header .item__link:hover {color: var(--gold);}
 
 
 @media (max-width: 700px) {
-    header .nav__list {gap: calc(100vw / 20);}
+    header .nav__list {gap: calc(100vw / 30);}
 }
 
 @media (max-width: 576px) {
