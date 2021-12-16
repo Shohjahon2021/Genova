@@ -8,6 +8,9 @@ let services = document.querySelector('.services');
 let calcBtns = document.querySelectorAll('.item__calc');
 let modal = document.querySelector('.modal');
 let modalClose = document.querySelector('.modal__close-btn');
+let modalName = document.querySelector('#modalName');
+let modalNumber = document.querySelector('#modalNumber');
+let modalSubmit = document.querySelector('.modal__submit-btn');
 let pointReturn;
 
 // Menu
@@ -68,3 +71,13 @@ modalClose.onclick = function() {
     pointReturn = window.pageYOffset;
     window.scrollTo(0, pointReturn);
 }
+
+modal.addEventListener('submit', function(pEvent) {
+    if(modalName.value === '' && '' === modalNumber.value) {
+        pEvent.preventDefault(); 
+        alert('Form is empty.');
+    } else if (modalName.value === '' || '' === modalNumber.value) {
+        pEvent.preventDefault(); 
+        alert('One field is empty.');
+    }
+});
